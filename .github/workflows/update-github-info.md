@@ -10,6 +10,10 @@ permissions:
   issues: read
   pull-requests: read
 strict: true
+network:
+  allowed:
+    - defaults
+    - github.blog
 tools:
   github:
     mode: gh-proxy
