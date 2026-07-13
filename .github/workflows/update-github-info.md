@@ -14,6 +14,7 @@ network:
   allowed:
     - defaults
     - github.blog
+    - github.com
 tools:
   github:
     mode: gh-proxy
@@ -36,11 +37,11 @@ safe-outputs:
 Refresh the GitHub info page with current information and propose changes using a pull request.
 
 1. Read notes/mona-notes.md for voice, framing, and priorities.
-2. Fetch and review https://github.blog/latest/.
-3. Fetch and review https://github.blog/changelog/.
+2. Fetch and review the GitHub Blog at https://github.blog/latest/.
+3. Fetch and review the GitHub Changelog at https://github.blog/changelog/.
 4. Update only site/content/github-info.md with a concise, well-structured summary of notable updates.
 5. Create a pull request using the create-pull-request safe output so changes are proposed on a branch and never written directly to main.
-6. In the PR title or body, clearly indicate this update is for Mona to review and include the two source URLs.
+6. In the PR title or body, include a note for review by Mona and include the two source URLs.
 7. If there are no meaningful updates, call noop with a brief reason.
 
 ## Constraints
